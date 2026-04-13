@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
             {
                 path: 'friends/:id',
                 element: <FriendDetails></FriendDetails>,
-                loader: () => fetch('/friend.json'),
+                loader: () => fetch('/friends.json'),
             },
             {
                 path: "timeline",

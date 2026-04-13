@@ -9,7 +9,7 @@
     "tags": ["college", "hiking"],
     "bio": "Roommate from sophomore year. We used to go trekking in the Western Ghats every other weekend.",
     "goal": 14,
-    "next_due_date": "2025-06-10"
+    "next_due_date": "10 June, 2025"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["work", "mentor"],
     "bio": "Former manager who taught me everything about project management. Great at giving career advice.",
     "goal": 30,
-    "next_due_date": "2025-07-28"
+    "next_due_date": "28 August, 2025"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["photography", "childhood"],
     "bio": "Lived next door for 10 years. Both share a passion for street photography and vintage cameras.",
     "goal": 14,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "15 August, 2025"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["fitness", "gym-buddy"],
     "bio": "Met at the local CrossFit box. He keeps me accountable on leg days and heavy lifting sessions.",
     "goal": 7,
-    "next_due_date": "2025-07-10"
+    "next_due_date": "10 July, 2025"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tags": ["art", "travel"],
     "bio": "Met while backpacking through Southeast Asia. She's an incredible watercolor artist based in Seattle.",
     "goal": 30,
-    "next_due_date": "2025-05-15"
+    "next_due_date": "15 May, 2025"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["gaming", "coding"],
     "bio": "Met during a 48-hour hackathon. We still play co-op strategy games on Friday nights.",
     "goal": 10,
-    "next_due_date": "2025-07-12"
+    "next_due_date": "12 July, 2025"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["yoga", "neighbor"],
     "bio": "Current neighbor who introduced me to meditation. We usually grab coffee after Sunday morning yoga.",
     "goal": 7,
-    "next_due_date": "2025-07-06"
+    "next_due_date": "06 July, 2025"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "tags": ["book-club", "history"],
     "bio": "A local historian I met at the library. We trade recommendations for non-fiction biographies.",
     "goal": 21,
-    "next_due_date": "2025-07-11"
+    "next_due_date": "11 July, 2025"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "tags": ["cooking", "high-school"],
     "bio": "Best friend from high school. She's now a sous-chef and sends me the best sourdough recipes.",
     "goal": 30,
-    "next_due_date": "2025-05-01"
+    "next_due_date": "01 May, 2025"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "tags": ["music", "concerts"],
     "bio": "Guitarist in a local band. We always share new indie playlists and go to underground gigs.",
     "goal": 14,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "18 July, 2025"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "tags": ["language-exchange", "abroad"],
     "bio": "Study abroad partner in Tokyo. We try to have a video call once a season to practice Japanese/English.",
     "goal": 60,
-    "next_due_date": "2025-04-10"
+    "next_due_date": "10 April, 2025"
   },
   {
     "id": 12,
@@ -141,6 +141,6 @@
     "tags": ["volunteering", "community"],
     "bio": "Coordinates the local food bank. We met while organizing a community cleanup last summer.",
     "goal": 30,
-    "next_due_date": "2025-07-08"
+    "next_due_date": "08 July, 2025"
   }
 ]
