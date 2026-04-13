@@ -6,9 +6,9 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className='flex items-center justify-between mx-auto px-5 py-5 shadow-sm'>
+        <div className='flex items-center justify-center  mx-auto px-5 py-5 shadow-sm lg:justify-between'>
             {/* This is logo */}
-            <div><h1 className='text-3xl font-bold text-black'>Keen<span className='text-green-800'>Keeper</span></h1></div>
+            <div className='hidden lg:block'><h1 className='text-3xl font-bold text-black'>Keen<span className='text-green-800'>Keeper</span></h1></div>
 
             {/* This page navigtion link container */}
             <div className='flex items-center justify-center gap-4 mr-5 text-sm font-bold p-1'>
