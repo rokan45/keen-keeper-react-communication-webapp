@@ -4,6 +4,7 @@ import Homepage from "../component/home/Homepage";
 import TimelinePage from "../component/timeline/TimelinePage";
 import StatPage from "../component/stat/StatPage";
 import FriendDetails from "../component/friendDetails/FriendDetails";
+import { Suspense } from "react";
 
 export const router = createBrowserRouter([
     {
@@ -15,8 +16,10 @@ export const router = createBrowserRouter([
                 element: <Homepage />,
             },
             {
-                path: 'friends/:id',
-                element: <FriendDetails></FriendDetails>,
+                path: '/friends/:id',
+                element: <Suspense fallback={<span className="loading loading-bars mx-auto flex justify-center items-center loading-xl"></span>}>
+                    <FriendDetails></FriendDetails>
+                </Suspense>,
                 loader: () => fetch('/friends.json'),
             },
             {

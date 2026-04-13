@@ -16,24 +16,77 @@ const ContextProvider = ({ children }) => {
     const [storeVideoInfo, setStoreVideoInfo] = useState([]);
 
 
-    
-    // function to handle call button event
-    const handlleCallBtn = ({currentFriend}) => {
 
-        setStoreCallInfo([...storeCallInfo,currentFriend]);
+    // function to handle call button event
+    const handlleCallBtn = (currentFriend ) => {
+
+        alert("Calling to Your friend!")
+
+        const NewCallData = {
+            ...currentFriend,
+            //customize date format to make it history clean          
+            interactionTime: new Date().toLocaleString('en-GB', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
+            }).replace(',', ''),
+            // to tract the type of data
+            interactionType: 'Text'
+        };
+
+
+        setStoreCallInfo([...storeCallInfo, NewCallData]);
 
     }
 
 
     //function to handle text button event
-    const handlleTextBtn = ({currentFriend}) => {
-        setStoreTextInfo([...storeTextInfo,currentFriend]);
+    const handlleTextBtn = (currentFriend ) => {
 
+        alert("Calling to Your friend!")
+
+        const NewTextData = {
+            ...currentFriend,
+            //customize date format to make it history clean          
+            interactionTime: new Date().toLocaleString('en-GB', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
+            }).replace(',', ''),
+            // to tract the type of data
+            interactionType: 'Text'
+        };
+
+
+        setStoreTextInfo([...storeTextInfo, NewTextData]);
     }
 
     //function to handle video call butiton event
-    const handlleVideoCallBtn = ({currentFriend}) => {
-        setStoreVideoInfo([...storeVideoInfo,currentFriend]);
+    const handlleVideoCallBtn = (currentFriend ) => {
+
+        alert("Calling to Your friend!")
+
+        const NewVideoCallData = {
+            ...currentFriend,
+            //customize date format to make it history clean          
+            interactionTime: new Date().toLocaleString('en-GB', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
+            }).replace(',', ''),
+            // to tract the type of data
+            interactionType: 'Text'
+        };
+        setStoreVideoInfo([...storeVideoInfo, NewVideoCallData]);
     }
 
     const data = {

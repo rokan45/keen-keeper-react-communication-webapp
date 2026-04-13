@@ -8,6 +8,8 @@ const TimelinePage = () => {
         storeTextInfo,
         storeVideoInfo, } = useContext(FriendContext);
 
+    console.log(storeCallInfo);
+
 
     return (
         <div class="min-h-screen bg-gray-50 p-6 md:p-12 font-sans">
@@ -31,34 +33,46 @@ const TimelinePage = () => {
 
                 <div class="flex flex-col gap-4">
 
-                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-[0_3px_6px_0_rgba(0,0,0,0.05)] flex items-center gap-4 hover:translate-x-1 transition-transform cursor-pointer">
-                        <div class="text-2xl">🤝</div>
-                        <div class="flex flex-col">
-                            <p class="text-sm font-medium text-gray-500">
-                                <span class="text-[#0f2a3d] font-bold">Meetup</span> with Tom Baker
-                            </p>
-                            <span class="text-xs text-gray-400 mt-1">March 29, 2026</span>
-                        </div>
+                    <div>
+                        {
+                            storeCallInfo.map((call, index) => <div key={index} class="bg-white p-5 rounded-xl border border-gray-100 shadow-[0_3px_6px_0_rgba(0,0,0,0.05)] flex items-center gap-4 hover:translate-x-1 transition-transform cursor-pointer">
+                                <div class="text-2xl">🤝</div>
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-medium text-gray-500">
+                                        <span class="text-[#0f2a3d] font-bold">Meetup</span>  {call.name}
+                                    </p>
+                                    <span class="text-xs text-gray-400 mt-1">{call.interactionTime}</span>
+                                </div>
+                            </div>)
+                        }
                     </div>
 
-                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-[0_3px_6px_0_rgba(0,0,0,0.05)] flex items-center gap-4 hover:translate-x-1 transition-transform cursor-pointer">
-                        <div class="text-2xl">💬</div>
-                        <div class="flex flex-col">
-                            <p class="text-sm font-medium text-gray-500">
-                                <span class="text-[#0f2a3d] font-bold">Text</span> with Sarah Chen
-                            </p>
-                            <span class="text-xs text-gray-400 mt-1">March 28, 2026</span>
-                        </div>
+                    <div>
+                        {
+                            storeTextInfo.map((text, index) => <div key={index} class="bg-white p-5 rounded-xl border border-gray-100 shadow-[0_3px_6px_0_rgba(0,0,0,0.05)] flex items-center gap-4 hover:translate-x-1 transition-transform cursor-pointer">
+                                <div class="text-2xl">💬</div>
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-medium text-gray-500">
+                                        <span class="text-[#0f2a3d] font-bold">Text</span>  {text.name}
+                                    </p>
+                                    <span class="text-xs text-gray-400 mt-1">{text.interactionTime}</span>
+                                </div>
+                            </div>)
+                        }
                     </div>
 
-                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-[0_3px_6px_0_rgba(0,0,0,0.05)] flex items-center gap-4 hover:translate-x-1 transition-transform cursor-pointer">
-                        <div class="text-2xl">📹</div>
-                        <div class="flex flex-col">
-                            <p class="text-sm font-medium text-gray-500">
-                                <span class="text-[#0f2a3d] font-bold">Video</span> with Aisha Patel
-                            </p>
-                            <span class="text-xs text-gray-400 mt-1">March 23, 2026</span>
-                        </div>
+                    <div>
+                        {
+                            storeVideoInfo.map((video,index) => <div key={index} class="bg-white p-5 rounded-xl border border-gray-100 shadow-[0_3px_6px_0_rgba(0,0,0,0.05)] flex items-center gap-4 hover:translate-x-1 transition-transform cursor-pointer">
+                                <div class="text-2xl">📹</div>
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-medium text-gray-500">
+                                        <span class="text-[#0f2a3d] font-bold">Video</span>  {video.name}
+                                    </p>
+                                    <span class="text-xs text-gray-400 mt-1">{video.interactionTime}</span>
+                                </div>
+                            </div>)
+                        }
                     </div>
 
                 </div>

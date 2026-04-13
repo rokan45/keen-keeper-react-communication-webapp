@@ -5,7 +5,7 @@ const Friend = ({ friend }) => {
 
     const {id, name, picture, days_since_contact, status, tags } = friend
     return (
-        <Link to={`friends/${id}`} className='p-4 shadow-md '>
+        <Link to={`/friends/${id}`} className='p-4 shadow-md '>
             <div> <img className='rounded-[1000px] flex items-center justify-center mx-auto' src={picture} alt={name} width={'100px'} height={'100px'} /></div>
             <h2 className='text-sm font-bold text-center mt-2'>{name}</h2>
             <p className='text-sm text-gray-500 text-center mt-1'>{days_since_contact} ago</p>
