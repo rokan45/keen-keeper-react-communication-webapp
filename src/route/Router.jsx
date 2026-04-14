@@ -5,6 +5,7 @@ import TimelinePage from "../component/timeline/TimelinePage";
 import StatPage from "../component/stat/StatPage";
 import FriendDetails from "../component/friendDetails/FriendDetails";
 import { Suspense } from "react";
+import ErrorPage from "../eroor/ErrorPage";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +32,7 @@ export const router = createBrowserRouter([
                 element: <StatPage></StatPage>
             }
 
-        ]
+        ],
+        errorElement:<ErrorPage></ErrorPage>
     }
 ]);
