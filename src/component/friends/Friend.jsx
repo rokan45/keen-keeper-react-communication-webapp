@@ -14,7 +14,7 @@ const Friend = ({ friend }) => {
                     tags.map((tag,index) => <span key={index} className='bg-green-100 text-sm rounded-2xl px-2'>{tag}</span>)
                 }
             </div>
-           <button className={`flex items-center justify-center mx-auto mt-3 p-1 text-white text-sm rounded-2xl ${status==='on-track'?"bg-[#244d3f]":''} ${status==='almost due'?"bg-orange-200":''} ${status==='overdue'?"bg-red-200":''}`}>{status}</button>
+           <button className={`flex items-center justify-center mx-auto mt-3 px-2 text-white text-sm rounded-2xl ${status==='on-track'?"bg-[#244d3f]":''} ${status==='almost due'?"bg-orange-200":''} ${status==='overdue'?"bg-red-200":''}`}>{status}</button>
 
         </Link>
     );

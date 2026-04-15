@@ -1,4 +1,8 @@
 import React, { createContext, useState } from 'react';
+import { FaVideo } from 'react-icons/fa';
+import { IoMdText } from 'react-icons/io';
+import { MdAddCall, MdAddIcCall } from 'react-icons/md';
+import { toast } from 'react-toastify';
 
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -27,8 +31,11 @@ const ContextProvider = ({ children }) => {
 
     // function to handle call button event
     const handlleCallBtn = (currentFriend) => {
-
-        alert("Calling to Your friend!")
+        // toast on click call button
+        toast(`Calling ${currentFriend.name}`, {
+            icon: <MdAddCall />,
+            position: "top-center",
+        });
 
         const NewCallData = {
             ...currentFriend,
@@ -54,8 +61,11 @@ const ContextProvider = ({ children }) => {
 
     //function to handle text button event
     const handlleTextBtn = (currentFriend) => {
-
-        alert("Calling to Your friend!")
+        // toast on click text button
+        toast(`Text Sent to ${currentFriend.name}`, {
+            icon: <IoMdText />,
+            position: "top-center",
+        });
 
         const NewTextData = {
             ...currentFriend,
@@ -79,7 +89,11 @@ const ContextProvider = ({ children }) => {
     //function to handle video call butiton event
     const handlleVideoCallBtn = (currentFriend) => {
 
-        alert("Calling to Your friend!")
+        // toast on click video call button
+        toast(`Calling ${currentFriend.name}`, {
+            icon: <FaVideo />,
+            position: "top-center",
+        });
 
         const NewVideoCallData = {
             ...currentFriend,

@@ -3,17 +3,17 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { FriendContext } from '../../context/ContextProvider';
 
 const StatPage = () => {
-    // Access your actual interaction counts from Context
+    
     const { storeCallInfo, storeTextInfo, storeVideoInfo } = useContext(FriendContext);
 
-    // Prepare data based on the length of your stored interaction arrays
+    // data based on the stored interaction arrays
     const data = [
         { name: 'Call', value: storeCallInfo.length || 0, color: '#2d5e4b' },  // Deep Green
         { name: 'Text', value: storeTextInfo.length || 0, color: '#a15bf9' },  // Purple
         { name: 'Video', value: storeVideoInfo.length || 0, color: '#4caf50' } // Light Green
     ];
 
-    // Check if there is any data to show; if not, show a placeholder
+    // Check if there is any data to show
     const totalInteractions = data.reduce((acc, curr) => acc + curr.value, 0);
 
     return (
@@ -31,11 +31,11 @@ const StatPage = () => {
                             cy="50%"
                             innerRadius={70}  /* This creates the "Donut" hole */
                             outerRadius={100}
-                            paddingAngle={8}  /* Adds the clean gaps between segments */
+                            paddingAngle={8}  /* Adds gaps between segments */
                             dataKey="value"
                             stroke="none"
                         >
-                            {/* Map through data to apply custom colors */}
+                            {/* Map to apply custom colors */}
                             {data.map((entry, index) => (
                                 <Cell key={`cell-${index}`} fill={totalInteractions === 0 ? '#f3f4f6' : entry.color} />
                             ))}

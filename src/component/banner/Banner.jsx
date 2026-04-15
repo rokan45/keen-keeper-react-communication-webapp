@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BiPlus } from 'react-icons/bi';
+import { FriendContext } from '../../context/ContextProvider';
 
 const Banner = () => {
+    const { allinteraction } = useContext(FriendContext);
+
     const stats = [
-        { label: 'Total Friends', value: 10 },
+        { label: 'Total Friends', value: allinteraction.length },
         { label: 'On Track', value: 3 },
         { label: 'Need Attention', value: 6 },
         { label: 'Interactions This Month', value: 12 },
