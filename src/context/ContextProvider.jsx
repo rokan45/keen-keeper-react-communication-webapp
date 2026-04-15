@@ -16,9 +16,17 @@ const ContextProvider = ({ children }) => {
     const [storeVideoInfo, setStoreVideoInfo] = useState([]);
 
 
+    // Make a object to store all data info
+    const allinteraction = [
+        ...storeCallInfo,
+        ...storeTextInfo,
+        ...storeVideoInfo
+    ];
+
+
 
     // function to handle call button event
-    const handlleCallBtn = (currentFriend ) => {
+    const handlleCallBtn = (currentFriend) => {
 
         alert("Calling to Your friend!")
 
@@ -34,17 +42,18 @@ const ContextProvider = ({ children }) => {
                 hour12: true
             }).replace(',', ''),
             // to tract the type of data
-            interactionType: 'Text'
+            interactionType: 'Call'
         };
 
 
         setStoreCallInfo([...storeCallInfo, NewCallData]);
 
+
     }
 
 
     //function to handle text button event
-    const handlleTextBtn = (currentFriend ) => {
+    const handlleTextBtn = (currentFriend) => {
 
         alert("Calling to Your friend!")
 
@@ -68,7 +77,7 @@ const ContextProvider = ({ children }) => {
     }
 
     //function to handle video call butiton event
-    const handlleVideoCallBtn = (currentFriend ) => {
+    const handlleVideoCallBtn = (currentFriend) => {
 
         alert("Calling to Your friend!")
 
@@ -84,7 +93,7 @@ const ContextProvider = ({ children }) => {
                 hour12: true
             }).replace(',', ''),
             // to tract the type of data
-            interactionType: 'Text'
+            interactionType: 'Video'
         };
         setStoreVideoInfo([...storeVideoInfo, NewVideoCallData]);
     }
@@ -99,6 +108,7 @@ const ContextProvider = ({ children }) => {
         setStoreCallInfo,
         setStoreTextInfo,
         setStoreVideoInfo,
+        allinteraction,
     };
     return <FriendContext.Provider value={data}>{children}</FriendContext.Provider>
 };
