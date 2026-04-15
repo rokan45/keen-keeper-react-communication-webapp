@@ -25,7 +25,7 @@ const ContextProvider = ({ children }) => {
         ...storeCallInfo,
         ...storeTextInfo,
         ...storeVideoInfo
-    ];
+    ].sort((a, b) => new Date(b.interactionTime) - new Date(a.interactionTime));
 
 
 

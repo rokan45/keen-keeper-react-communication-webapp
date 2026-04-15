@@ -110,8 +110,8 @@ keen-keeper-react-communication-webapp
 
 ## Live Demo & Source
 
-[Live Demo](#) &nbsp;|&nbsp; [LinkedIn](#)
+[Live Demo](#) &nbsp;|&nbsp; [LinkedIn](www.linkedin.com/in/rokan45)
 
 ---
 
-*Developed with ❤️ by [Your Name] — CS Undergraduate | Full-Stack Aspirant*
+*Developed by [Rokanuzzaman] — CS Undergraduate | Full-Stack Aspirant*
